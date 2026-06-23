@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1.8vw;
+}
+
+.MBG{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    width: 100%;
+    background-color: var(--BGColor);
+
+}
+
+
+.BigLogoImgs{
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center 62%;
+    top: -63.5vw;
+    border-radius: 50%;
+    height: 100vw;
+    width: 103.1vw;
+    box-shadow: 0vw 2.083vw 3.472vw 0vw var(--ShadowColor); 
+    background-image: url('/img/BiggLogo.png');
+}
+
+.MText{
+    text-align: center;
+    font-size: 4vw;
+    width: 85vw;
+    transform: translateY(-45vw);
+    color: var(--MainTextIndexColor);
+}
+
+.MStart{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    height: 10vw;
+    width: 40%;
+    background-color: var(--addicationColor);
+    border: 0.2vw var(--BorderColor) solid;
+    transform: translateY(-30vw);
+    transform-origin: 50% 4000%;
+    text-decoration: none;
+    font-size: 4.2vw;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0.694vw 0.694vw 1.736vw 0.347vw var(--ShadowColor);
+}
+
+.MStart:hover{
+    color: var(--HTextColor);
+    transform: translateY(-10vw) scale(1.05);
+}
+
+.imgBigLogo{
+    position: absolute;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imgBigLogo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.imgBigLogo:hover{
+    transform: scale(1.03);
+}
+
+#Yasuo{
+    width: 25%;
+    margin-top: 67.5vw;
+    margin-left: 67vw;
+    clip-path: polygon(12.76% 41.15%, 15.89% 33.78%, 23.24% 41.8%, 59.74% 27.87%, 68.9% 0%, 95.16% 1.49%, 100% 15.22%, 90.32% 26.1%, 92.29% 38.48%, 95.16% 46.25%, 93.2% 71.94%, 86.91% 80.28%, 64.56% 100%, 20.64% 90.65%, 17.9% 81.12%, 31.85% 78.16%, 25.64% 62.37%, 1.26% 46.25%, 0% 32.81%);
+}
+#tfSilhouette{
+    width: 40%;
+    margin-top: 69vw;
+    margin-left: 34vw;
+    clip-path: polygon(18.31% 28.37%, 28.55% 26.95%, 45.12% 19.67%, 47.7% 0%, 50.84% 0%, 59.2% 21.65%, 63.11% 16.9%, 67.03% 21.65%, 73.83% 13.41%, 80.48% 22.27%, 84.98% 29.32%, 91.09% 22.27%, 99.24% 35.42%, 94.84% 49.16%, 95.69% 64.63%, 96.65% 81.95%, 96.65% 100%, 84.45% 95.89%, 81.18% 74.09%, 78.27% 97.74%, 40.53% 97.74%, 20.73% 95.3%, 18.31% 74.09%, 13.32% 94.85%, 6.13% 93.51%, 8.76% 76.45%, 2.95% 48.73%, 0% 6.25%, 5.27% 10.02%, 11.85% 32.77%);
+}
+#csCharacters{
+   clip-path: polygon(20.45% 0.96%, 35.33% 3.48%, 37.63% 11.8%, 41.6% 7.94%, 44.58% 13.92%, 47.58% 11.8%, 49.76% 0%, 64.3% 0%, 65.96% 11.8%, 74.88% 13.92%, 78.77% 22.78%, 83.8% 37.97%, 99.84% 46.59%, 99.84% 52.12%, 83.95% 46.59%, 74.88% 46.59%, 81.85% 62.81%, 83.57% 74.9%, 80.26% 82.99%, 80.81% 90.08%, 88.68% 97.7%, 72.08% 92.14%, 68.2% 79.42%, 61.82% 62.28%, 61.82% 76.96%, 58.57% 88.35%, 50.98% 84.86%, 46.35% 74.13%, 45.33% 61.91%, 43.5% 70.97%, 48.46% 80.82%, 48.26% 83.44%, 31.77% 75.42%, 25.12% 71.56%, 14.13% 64.53%, 11.91% 59.58%, 11% 37.7%, 0.03% 27.22%, 0.03% 16.09%, 4.94% 13.17%, 7.41% 6.82%, 12.5% 8.69%, 13.94% 15.41%, 18.83% 13.94%);
+    margin-left: 13vw;
+    margin-top: 66vw;
+    width: 25%;
+    z-index: 1000;
+}
+
+#Pudge{
+    clip-path: polygon(21.87% 4.71%, 27.57% 0.44%, 33.58% 0%, 39.55% 6.83%, 47.08% 13.94%, 58.43% 12.9%, 65.14% 17.65%, 70.89% 26.71%, 74.47% 45.89%, 71.06% 64.62%, 79.37% 57.91%, 94.04% 13.94%, 100% 18.69%, 100% 39.09%, 96.84% 60.92%, 90.79% 79.45%, 83.6% 85.86%, 85.08% 75.64%, 89.97% 58.23%, 94.04% 38.15%, 85.08% 63.19%, 81.34% 75.3%, 69.2% 78.71%, 66.29% 68.82%, 69.2% 45.84%, 65.21% 30.46%, 59.19% 23.96%, 56.33% 38.04%, 51.32% 42.41%, 42.96% 46.85%, 45.2% 62.11%, 42.08% 79.94%, 43.27% 96.62%, 29.68% 92.88%, 26.08% 82.12%, 14.81% 51.78%, 12.05% 38.06%, 12.25% 32.59%, 19.86% 23.48%);
+    margin-top: 64.8vw;
+    width: 50%;
+    z-index: 999;
+}
+
+#rustContainer{
+    clip-path: polygon(16.68% 0.3%, 99.81% 2.71%, 99.84% 15.54%, 91.07% 26.89%, 89.69% 46.08%, 99.81% 59.7%, 93.4% 90.2%, 67.87% 92.83%, 57.3% 93.06%, 45.61% 91.99%, 33.06% 90.42%, 14.25% 86.5%, 6.89% 85.89%, 0% 68.21%, 2.95% 46.08%, 1.31% 23.72%);
+    margin-left: 35.2vw;
+    margin-top: 81.5vw;
+    width: 26%;
+    z-index: 998;
+}
+#Ahri{
+    clip-path: polygon(34.64% 9.36%, 46.23% 2.04%, 67.02% 5.12%, 75.27% 17.59%, 96.84% 20.6%, 76.87% 41.76%, 60.73% 54.38%, 39.26% 65.19%, 26.73% 69.46%, 22.44% 70.22%, 19.65% 61.13%, 21.52% 55.24%, 15.8% 58.04%, 17.77% 67.02%, 7.69% 59.22%, 4.3% 48.8%, 0% 37.44%, 0% 24.63%, 8.38% 19.09%, 12.78% 13.72%, 14.78% 10.63%, 11.45% 8%, 7.16% 12.71%, 4.51% 6.7%, 11.6% 0%, 22.44% 0%, 26.95% 5.52%, 30.78% 5.12%);
+    width: 30%;
+    margin-top: 77.7vw;
+    margin-left: 60vw;
+    z-index: 10;
+
+}

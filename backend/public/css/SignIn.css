@@ -1,0 +1,122 @@
+
+*{
+    font-size: 2vw;
+}
+body {
+    background-color: var(--addicationColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.authCard {
+    background-color: var(--HBGColor);
+    width: 25%;
+    height: auto;
+    padding: 3% 2%;
+    border-radius: 5vw;
+    box-shadow: 0vw 0vw 1.388vw 0.347vw var(--ShadowColor);
+    text-align: center;
+    color: #ffffff;
+}
+
+.logoArea {
+    font-size: 3vw;
+    font-weight: bold;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.8vw;
+    margin-bottom: 0.8vw;
+}
+.tabBtn {
+    background: none;
+    border: none;
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 0.5vw 1vw;
+}
+.tabBtn.active{
+    color: #ffffff;
+    border-bottom: 0.3vw solid #ffffff;}
+
+.authForm {
+    display: none;
+}
+.authForm.active {
+    display: block;
+}
+.inputGroup {
+    margin-bottom: 0.2vw;
+    text-align: left;
+}
+.inputGroup label {
+    display: block;
+    margin-left: 1.3vw;
+    margin-bottom: 0.3vw;
+    font-size: 1.2vw;
+   
+}
+.inputGroup input {
+    width: 100%;
+    padding: 0.8vw 1.8vw;
+    background-color: var(--input-bg);
+    border: 0.2vw solid transparent;
+    border-radius: 2.7vw; color: #ffffff;
+    outline: none;
+}
+.inputGroup input:focus{
+    border: 0.2vw solid white;
+}
+.submitBtn {
+    width: 100%;
+    padding: 1vw;
+    margin-top: 1vw;
+    
+    background-color: #ffffff;
+    color: var(--text-color);
+    border: none;
+    border-radius: 2.7vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.errorMessage {
+    color: #ffcccc;
+    font-size: 0.8vw;
+    margin-left: 1.3vw;
+    margin-top: 0.2vw;
+    min-height: 1vw;
+}
+
+.inputGroup {
+    position: relative;
+}
+
+.inputGroup input.errorInput {
+    border: 0.2vw solid #a16b6b;
+    background-color: #ffc1c1;
+}
+
+.inputGroup input.errorInput:focus {
+    border: 0.2vw solid #b92b2b;
+    background-color: #fad5d5;
+}
+
+@media (max-width: 768px) {
+    * { font-size: 3.5vw; }
+}
+
+
+body {
+    overflow-x: hidden;
+}

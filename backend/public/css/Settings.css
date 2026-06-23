@@ -1,0 +1,65 @@
+:root{
+    --HBGColor: #52C1CE; 
+    --addicationColor: #97D9E1;
+    --BGColor: #FAFAFA;
+    --GoldColor: #C5A31B;
+    --DarkGoldColor: #b89818;
+    --BorderColor: #7980C8;
+    --itemGrayColor: #B0BBC2;
+    --quickSeetingColor: #FFFFFF;
+    --quickSettingTextColor: #000000;
+    --BtnWriteSelerColor: #3A6892;
+    --HTextColor: #e9e9e9;
+    --ShadowColor: rgba(0, 0, 0, 0.25);
+    --BGOpeningWindow: #18656e;
+    --TextOfferColor: #000000;
+
+
+    /* catalog html */
+    --imgFilterColor: rgba(68, 119, 126, 0.75);
+    --FileterColor: rgba(88, 153, 161, 0.75);
+    --ScrollColor: #52C1CE;
+    --BGScrollColor: #18656e;
+    --HoverScrollColor: #97D9E1;
+
+    /*SignIn*/
+    --input-bg: #82cee0;
+    --text-color: #1e3d43;
+
+
+    /*index*/
+    --MainTextIndexColor: Black;
+
+    /*Offer*/
+    --LineBorderColor: Black;
+}
+
+html.themeDark{
+    --HBGColor: #044951; 
+    --addicationColor: #247983;
+    --BGColor: #6e7174;
+    --GoldColor: #a1840f;
+    --DarkGoldColor: #9D7E03;
+    --BorderColor: #3E47AC;
+    --itemGrayColor: #899196;
+    --quickSeetingColor: #bdbdbd;
+    --quickSettingTextColor: #000000;
+    --BtnWriteSelerColor: #254b6e;
+    --BGOpeningWindow: #07acbb;
+    --TextOfferColor: #ffffff;
+
+    /* catalog html */
+    --imgFilterColor: #05383f;
+    --FileterColor: #0f535a;
+    
+
+    /*SignIn*/
+    --input-bg: #498d9c;
+    --text-color: #1e3d43;
+
+    /*index*/
+    --MainTextIndexColor: white;
+
+    /*Offer*/
+    --LineBorderColor: White;
+}

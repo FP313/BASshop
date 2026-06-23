@@ -1,0 +1,302 @@
+@import url('https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet');
+
+.HDiv{
+    height: 6vw; /*11.87vw;*/
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+    z-index: 999;
+    background-color: var(--HBGColor);
+   
+}   
+
+.HBtnLogo{
+    height: 100%;
+    width: 99vw;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 11vw 24vw 1fr 1fr;
+  
+}
+
+.HSearch{
+    border-radius: 9999px;
+    height: 50%; 
+    width: 80%;
+    background-color: var(--addicationColor);
+    margin-left: 3vw;
+    padding-left: 1.2vw;
+    box-shadow: 0.694vw 0.694vw 1.388vw 0vw var(--ShadowColor);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+    font-size: 1.8vw;
+}
+.HSearch:hover{
+    transform: scale(1.02);
+}
+
+.HSearch::placeholder{
+    text-align: center;
+    font-size: 1.8vw;
+    color: white;
+    
+}
+.HSearch:focus {
+    outline: none;
+    border: 0.2vw solid var(--BorderColor);
+}
+
+
+.HOption{
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    border-radius: 9999px;
+    box-shadow: 0.694vw 0.694vw 1.388vw 0vw var(--ShadowColor);
+    height: 50%;
+    width: 45vw;
+    background-color: var(--addicationColor);
+    margin-left: 1vw;
+}
+
+
+.TypeTovar{
+    width: 9vw;
+  }
+
+  .TypeTovarText {
+    width: 10vw;
+    height: 2vw;
+  }
+
+  .BGLinks {
+    position: absolute;
+    z-index: 999999;
+    width: 10vw;
+    max-height: 0vw;
+    opacity: 0;     
+    visibility: hidden;
+    overflow: hidden;
+    background-color: transparent;
+    transform: translateX(-0.1vw);
+    transition: max-height 0.5s ease-in-out 0s, border-radius 0.7s ease-in-out 0s,opacity 0s ease-in-out 0.5s, background-color 0.3s ease-in-out 3s, visibility 0s linear 3.3s;
+  }
+
+  .TypeTovar:hover .BGLinks {
+    background-color: var(--BGOpeningWindow);
+    border-radius: 1vw;
+    max-height: 10vw;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.5s ease-in-out 0s, border-radius 0.2s ease-in-out 0s,opacity 0s ease-in-out 0s , background-color 0s ease 0s, visibility 0s ease 0s;
+  }
+
+
+  .BGLinks a{
+    display: block;
+    width: 90%;
+    text-decoration: none;
+    margin-top: 0.6vw;
+    margin-left: 0.6vw;
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.6vw;
+  }
+  .BGLinks a:last-child{
+    margin-bottom: 0.6vw;
+  }
+
+  .BGLinks a:hover{
+    color: var(--HTextColor);
+    transform: scale(1.05);
+  }
+
+
+.HOption a{
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.HOption a:hover{
+    color: var(--HTextColor);
+    transform: scale(1.05);
+}
+
+.HOption .TypeTovarText{
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.HOption .TypeTovarText:hover{
+    color: var(--HTextColor);
+    transform: scale(1.05);
+}
+
+
+.HLogIn{
+    position: relative;
+    z-index: 3;
+    border-radius: 9999px;
+    height: 2vw;
+    width: 15vw;
+    box-shadow: 0.694vw 0.694vw 1.388vw 0vw var(--ShadowColor);
+    background-color: var(--GoldColor);
+    margin-left: 2vw;
+    margin-bottom: 0.25vw;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.HLogIn.hiden{
+    display: none;
+}
+
+.HLogIn:hover{
+    background-color: var(--DarkGoldColor);
+
+}
+
+.HLogIn div{
+    font-size: 1.1vw;
+    transform-origin: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    white-space: nowrap; 
+}
+.HLogIn div:hover{
+    color: var(--HTextColor);
+    transform: scale(1.02);
+}
+.IconAccount{
+    height: auto;
+    width: 4vw;
+    border-radius: 50%;
+    transform: translateX(-5vw);
+    display: none;
+}
+
+.IconAccount.view{
+   display: inline;
+}
+
+.HText{
+    height: 80%; 
+    width: 30vw;
+    position: relative;
+    z-index: 1;
+    right: 30vw;
+}
+
+.HText *{
+    font-size: 1.3vw;
+}
+.HCurrency{
+    transform-origin: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    right: 40%;
+}
+.HCurrency:hover{
+    color: var(--HTextColor);
+    transform: scale(1.02);
+}
+.HLanguage{
+    transform-origin: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    left: 65%;
+}
+.HLanguage:hover{
+    color: var(--HTextColor);
+    transform: scale(1.02);
+}
+.HBalance{
+    transform-origin: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    top: 85%;
+    left: 66%;
+}
+.HBalance:hover{
+    color: var(--HTextColor);
+    transform: scale(1.02);
+}
+.Logo{
+    height: 6vw; 
+    width: 6vw;
+    margin-left: 3vw;
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}   
+.Logo:hover{
+    transform: scale(1.2);
+}
+
+.FDiv{
+    height: 8vw;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    background-color: var(--HBGColor);
+    grid-template-columns: 20vw 55vw 1fr 1fr 1fr ;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.FText{
+    height: 8vw;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    text-decoration: none;
+    transform: translateX(-4vw);
+}
+.FText a{
+    text-decoration: none;
+    transform-origin: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 1.5vw;
+}
+
+
+.FText a:hover{
+    color: var(--HTextColor);
+    transform: scale(1.05);
+}
+
+
+.SocialNetwork{
+    border-radius: 50%;
+    height: 5vw; 
+    width: 5vw;
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0.416vw 0.416vw 0.694vw 0vw var(--ShadowColor);
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    font-size: 1.8vw;
+    overflow-x: hidden;
+}
+
+.HLogIn, .HSearch{
+    border: none;
+}
+
+
+.SocialNetwork:hover{
+    transform: scale(1.2);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}

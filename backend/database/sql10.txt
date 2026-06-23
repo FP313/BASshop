@@ -1,0 +1,206 @@
+/*select * from SimpleUser order by id;
+
+select * from SimpleUser where Login like '%1%';
+
+select * from SimpleUser where StatusOnTheSite = 'SimpleUser';
+select * from SimpleUser where StatusOnTheSite = 'Admin';
+select * from SimpleUser where StatusOnTheSite = 'SellerUser';
+select * from SimpleUser where StatusOnTheSite = 'SupportUser';
+
+select * from SimpleUser;
+select * from SimpleUser where Login == '';
+
+delete from SimpleUser where id == '';
+delete from SimpleUser where Login == '';
+
+update SimpleUser set Mail == '' where id = '';
+update SimpleUser set Password == '' where id = '';
+update SimpleUser set Balance == '' where id = '';
+update SimpleUser set FavoritesOfferId == '' where id = '';
+update SimpleUser set HistoryBuy == '' where id = '';
+update SimpleUser set HistoryBalance == '' where id = '';
+update SimpleUser set StatusOnTheSite == '' where id = '';
+
+update SimpleUser set Balance == '', HistoryBalance == '' where id = '';
+update SimpleUser set HistoryBuy == '', Balance == '' where id = '';*/
+--insert into SimpleUser(Login, Mail, Password, DateOfRegistration, Balance, FavoritesOfferId, HistoryBuy, HistoryBalance, StatusOnTheSite) values ('fdsf', '', '', '02.03.2000', 0, NULL, '', '', 'SimpleUser');
+
+
+
+
+select * from SellerUser order by id;
+select * from SellerUser order by SimpleUser == '';
+select * from SellerUser order by Number == '';
+
+
+/*select * from SellerUser where SimpleUserId like '%2%';*/
+
+
+delete from SellerUser where id == '';
+delete from SellerUser where SimpleUserId == '';
+delete from SellerUser where Number == '';
+delete from SellerUser where OffersId == '';
+
+update SellerUser set Number == '' where id = '';
+update SellerUser set AverageRating == '' where id = '';
+update SellerUser set HistorySell == '' where id = '';
+update SellerUser set OffersId == '' where id = '';
+update SellerUser set ReviewsId == '' where id = '';
+
+
+
+
+insert into SellerUser(SimpleUserId, HistorySell, OffersId, Number, AverageRating, ReviewsId) values (2, null, null, '+77773483489', null, null);
+
+select * from SellerUser order by id;
+
+
+
+
+
+
+
+
+
+select * from SupportUser order by id;
+select * from SupportUser order by SimpleUser == '';
+select * from SupportUser order by Number == '';
+
+
+/*select * from SupportUser where SimpleUserId like '%2%';*/
+
+
+delete from SupportUser where id == '';
+delete from SupportUser where SimpleUserId == '';
+delete from SupportUser where Number == '';
+
+update SupportUser set Number == '' where id = '';
+update SupportUser set AverageRating == '' where id = '';
+update SupportUser set OpenTicketsId == '' where id = '';
+update SupportUser set ResolvedTicketsId == '' where id = '';
+update SupportUser set ReviewsId == '' where id = '';
+
+
+
+
+insert into SupportUser(SimpleUserId, OpenTicketsId, ResolvedTicketsId, Number, AverageRating, ReviewsId) values (2, null, null, '+777734834789', null, null);
+
+select * from SupportUser order by id;
+
+
+
+
+
+
+
+
+
+
+select * from Review order by id;
+select * from Review order by Price == '';
+select * from Review order by Date == '';
+select * from Review order by RatingProducts == '';
+select * from Review order by SellerId == '';
+select * from Review order by SimpleUserId == '';
+
+select * from Review where Description like '%2%';
+
+
+delete from Review where id == '';
+
+insert into Review(Date, Price, Description, RatingProducts, SellerId, SimpleUserId) values ('02.03.2003', 324, 'gfdfgd', 3, 1, 3);
+
+select * from Review order by id;
+
+
+
+
+
+
+
+
+select * from ReviewSupport order by id;
+select * from ReviewSupport order by RatingSupport == '';
+select * from ReviewSupport order by SupportId == '';
+select * from ReviewSupport order by SimpleUserId == '';
+select * from ReviewSupport order by TicketId == '';
+
+
+
+select * from ReviewSupport where Description like '%2%';
+
+
+delete from ReviewSupport where id == '';
+
+insert into ReviewSupport(Date, Description, RatingSupport, SupportId, SimpleUserId, TicketId) values ('02.03.2003', 'gfdgdfg', 3, 1, 3, 3);
+
+select * from ReviewSupport order by id;
+
+
+
+
+select * from Card order by id;
+select * from Card order by Price == '';
+
+
+select * from Card where Description like '%2%';
+select * from Card where Title like '%2%';
+
+delete from Card where id == '';
+
+insert into Card(Url, IconUrl, Title, Price, Description, SellerUserId) values ('gfdgfdg', 'gfdgdf' , 'title', 243, 'des', 2);
+
+select * from Card order by id;
+
+
+
+
+
+
+
+select * from Offer order by id;
+select * from Offer order by PublishDate == '';
+select * from Offer order by Warranty == '';
+select * from Offer order by Availability == '';
+
+delete from Offer where id == '';
+
+insert into Offer(CardId, PublishDate, Warranty, Availability, BuyLink, SellerLink, AdditionalInfo) values (4, '02.02.2000', '2week', 'true', 'BuyLink4', 'SellerLink3', NULL);
+
+
+
+
+
+
+
+
+select * from imgFilter order by id;
+select * from imgFilter order by Popularity == '';
+
+delete from imgFilter where id == '';
+
+insert into imgFilter(href, imgSrc, Popularity) values ('gfdgdfg', 'gfdgdfgdf', 3);
+
+
+
+
+select * from Category order by id;
+
+delete from Category where id == '';
+
+insert into Category(imgFilterId, CategoryImgSrc) values (2, 'liga');
+
+
+
+
+select * from Ticket order by id;
+select * from Ticket order by Status desc;
+
+
+select * from Ticket where OpeningSimpleUserId == '';
+select * from Ticket where SupportId == '';
+select * from Ticket where Problem like '%404%';
+
+delete from Ticket where id == '';
+
+insert into Ticket(OpeningSimpleUserId, SupportId, Problem, Status) values (3, 1, 'gg', 'Open');

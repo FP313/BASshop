@@ -1,0 +1,135 @@
+.item:not(:first-child){
+    margin-top: 1vw;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;  
+    align-content: center;
+    border-radius: 2vw;
+    height: 10vw;
+    width: 100%;
+    background-color: var(--itemGrayColor);
+    font-size: 2vw;
+    text-decoration: none;
+    box-shadow: 0vw 0vw 1.388vw 0.347vw var(--ShadowColor);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.item.hidden {
+    display: none;
+}
+
+.item:hover{
+    transform: scale(1.03) translateX(0.5%) translateY(-5%);
+}
+
+.itemText{
+    display: flex;
+    flex-direction: column;
+    height: 110%;
+    margin-left: -4vw; 
+    padding-right: 5%;
+}
+
+.itemImg{
+    height: auto;
+    width: 9vw;
+    margin-left: 5%;
+    border-radius: 2vw;
+    box-shadow: 0.694vw 0.694vw 1.388vw 0vw rgba(0, 0, 0, 0.25);
+}
+
+.itemHead{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    font-size: 2vw;
+}
+
+.Title{
+    min-width: 95%;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+}
+.Price{
+    min-width: 60%;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.description{
+    font-size: 1.6vw;
+    display: -webkit-box;
+    min-height: 0;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+
+}
+
+.itemFooter{
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: auto;
+    margin-bottom: 1%;
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.itemHead, .itemFooter{
+    flex-shrink: 0;
+}
+.addicationInformation{
+    min-width: 95%;
+    max-width: 95%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.estimation{
+    display: grid;
+    grid-auto-flow: column;
+    min-width: 60%;
+    max-width: 100%;
+    margin-left: auto;
+}
+.estimationText{
+    width: 10vw;
+}
+.estimationImg{
+    width: 1.6vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    .items {
+        width: 80vw;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item{
+        height: 12vw;
+    }
+    .itemImg{
+        height: auto;
+        width: 10.5vw;
+        margin-left: 5%;
+    }
+    
+    .itemText{ 
+        height: 105%;
+        margin-left: -6vw; 
+    }
+}

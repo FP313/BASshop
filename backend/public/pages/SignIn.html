@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Вход и Регистрация</title>
+        <link rel="stylesheet" href="../css/HFcss.css">
+        <link rel="stylesheet" href="../css/Settings.css">
+        <link rel="stylesheet" href="../css/SignIn.css">
+    </head>
+    <body>
+
+        <div class="authCard">
+            <div class="logoArea">BAS</div>
+
+            <div class="tabs">
+                <button class="tabBtn active">Вход</button>
+                <button class="tabBtn">Регистрация</button>
+            </div>
+
+            <form id="login" class="authForm active" novalidate>
+                <div class="inputGroup"><label>Логин</label><input type="text" name="login" required></div>
+                <div class="inputGroup"><label>Пароль</label><input type="password" name="pass" required></div>
+                <button type="submit" class="submitBtn" name="LogIn" id="LogInid">Войти</button>
+            </form>
+
+            <form id="register" class="authForm" novalidate>
+                <div class="inputGroup"><label>Логин</label><input type="text" name="login" required></div>
+                <div class="inputGroup"><label>Email</label><input type="mail" name="mail" required></div>
+                <div class="inputGroup"><label>Телефон (необязательно)</label><input type="tel" name="phone"></div>
+                <div class="inputGroup"><label>Пароль</label><input type="password" name="pass" required></div>
+                <button type="submit" class="submitBtn" name="SignUp" id="SignUpid">Создать аккаунт</button>
+            </form>
+        </div>
+    <script src="../js/Settings.js"></script>
+    <script src="../js/SignIn.js"></script>
+    </body>
+</html>

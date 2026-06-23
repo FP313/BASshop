@@ -1,0 +1,125 @@
+.quickSettings{
+    border-radius: 2vw;
+    height: 47vw;
+    width: 17vw;
+    background-color: var(--quickSeetingColor);
+    display: grid;
+    justify-items: center;
+    box-shadow: 0.347vw 0.347vw 1.388vw var(--ShadowColor);
+}
+
+.quickSettings ul{
+    list-style-type: none;
+    margin-top: 1vw;
+    width: 95%;
+}
+.quickSettings li{
+    height: 3vw;
+    margin-top: 1.5vw;
+}
+
+.quickSettings li div, .quickSettings li a{
+    color: var(--quickSettingTextColor);
+    text-decoration: none;
+    font-size: 1.4vw;
+    transform-origin: 0% 50%;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.quickSettings li div:hover{
+    transform: scale(1.05);
+    color: var(--BGOpeningWindow);
+}
+
+.quickSettings li:nth-child(1), .quickSettings li:nth-child(5), .quickSettings li:nth-child(8){
+    border-bottom: 0.2vw solid var(--quickSettingTextColor);
+}
+
+.CheckBoxQuickSettingMobile, .ButtonQuickSettingMobile {
+    display: none;
+}
+
+.CheckBoxQuickSettingMobile, .LabelQuickSettingMobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .quickSettings {
+        display: none;
+    }
+
+    .CheckBoxQuickSettingMobile {
+        display: none;
+    }
+
+    .LabelQuickSettingMobile {
+        position: fixed;
+        top: 40vw;
+        left: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .quickSettingsMobile {
+        width: 0vw;
+        height: 55vw;
+        background-color: var(--quickSeetingColor);
+        box-shadow: 0.347vw 0.347vw 1.388vw var(--ShadowColor);
+        visibility: hidden;
+        opacity: 0;
+        overflow: hidden;
+        transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .CheckBoxQuickSettingMobile:checked ~ .LabelQuickSettingMobile .quickSettingsMobile {
+        width: 35vw; 
+        visibility: visible;
+        border-top-right-radius: 3vw;
+        border-bottom-right-radius: 3vw;
+        opacity: 1;
+    }
+
+    .quickSettingsMobile ul {
+        list-style-type: none;
+        width: 90%;
+        margin: 1.5vw;
+    }
+
+    .quickSettingsMobile li {
+        height: 3.8vw;
+        margin-top: 1.2vw;
+    }
+
+    .quickSettingsMobile li div, .quickSettingsMobile li a {
+        color: black;
+        text-decoration: none;
+        font-size: 2.2vw; 
+    }
+
+    .quickSettingsMobile li:nth-child(1), .quickSettingsMobile li:nth-child(5), .quickSettingsMobile li:nth-child(8) {
+        border-bottom: 0.2vw solid black;
+        padding-bottom: 0.5vw;
+    }
+
+    .ButtonQuickSettingMobile {
+        height: 7vw;
+        width: 7vw;
+        background-color: #52C1CE; 
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        border-bottom-right-radius: 1.5vw;
+        border-top-right-radius: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0.347vw 0.347vw 1.388vw var(--ShadowColor);
+    }
+    
+    .QuickSettingImgMobile {
+        height: 60%;
+        width: 60%;
+        margin-right: 0.5vw;
+    }
+
+}

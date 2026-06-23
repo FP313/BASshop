@@ -1,0 +1,353 @@
+.mainDiv{
+    display: grid;
+    justify-items: center;
+    height: 100%; 
+    width: 100%;
+    background-color: var(--addicationColor);
+}
+
+.offer{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 2vw;
+    margin-top: 2%;
+    height: 35vw;
+    width: 80vw;
+    background-color: var(--BGColor);
+    box-shadow: 1.388vw 1.388vw 2.777vw 0vw var(--ShadowColor);
+}
+.offer div, .offer h3{
+    color: var(--TextOfferColor);
+}
+
+.imgInfoDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.OfferAdduicationInformation{
+    margin-left: 4%;
+    font-size: 1.2vw;
+    white-space: nowrap;
+}
+
+.offerImg{
+    height: 25vw;
+    width: 25vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    border-radius: 2vw;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0.555vw 0.555vw 2.777vw 0vw var(--ShadowColor);
+}
+.offerImg:hover{
+    transform: scale(1.03);
+}
+
+.OfferitemText{
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    margin-top: 1%;
+    margin-left: 1%; 
+    padding-right: 3%;
+}
+
+.OfferitemHead{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    font-size: 2vw;
+}
+
+.OfferTitle{
+    min-width: 100%;
+    max-width: 100%;
+}
+.OfferPrice{
+    min-width: 60%;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.Offerdescription{
+    font-size: 1.4vw;
+    max-height: 95%;
+    display: -webkit-box;
+    -webkit-line-clamp: 13;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.OfferMore{
+    display: none;
+}
+
+.Offerbutton{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: 2%;
+    height: 10%;
+    width: 100%;
+}
+
+.Offerbutton *{
+    box-shadow: 0.694vw 0.694vw 1.388vw 0vw var(--ShadowColor);
+    margin-bottom: 1%;
+}
+
+.Buy, .WriteSeller{
+    border-radius: 9999px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Buy{
+    background-color: var(--GoldColor);
+    width: 10vw;
+    font-size: 1.6vw;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.Buy:hover{
+    transform: scale(1.05);
+}
+.WriteSeller{
+    background-color: var(--BtnWriteSelerColor);
+    width: 13vw;
+    font-size: 1.3vw;   
+}
+.WriteSeller:hover{
+    transform: scale(1.05); 
+}
+
+.Buy, .WriteSeller{
+    border: none;
+} 
+
+.addicationOfferItem.hiden{
+    display: none;
+}
+
+.addicationOfferItem {
+    height: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2%;              
+    margin-top: 1%;
+    padding: 1%;
+    background-color: var(--BGColor);
+    border-radius: 2vw;
+}
+
+.infoRow {
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 0.1vw dashed var(--LineBorderColor);
+    padding-bottom: 0.5%;
+    font-size: 60%;
+    margin-top: 2%;
+}
+
+
+.infoKey {
+    color: var(--MainTextIndexColor);
+    font-weight: 500;
+}
+.infoValue {
+    color: var(--MainTextIndexColor);
+}
+
+
+
+
+.src{  
+    margin-right: 67vw;
+    height: 2vw;
+    margin-top: 1%;
+}
+
+.bottomPart{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 1%;
+    height: auto;
+    width: 80vw;
+}
+
+.bottomPartInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2vw;
+    height: auto;
+    width: 100%;
+    background-color: var(--BGColor);
+    box-shadow: 0.694vw 0.694vw 1.388vw 0vw var(--ShadowColor);
+}
+
+.reviewsText{
+    color: var(--TextOfferColor);
+    margin-right: 81%;
+}
+
+.itemsReviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    height: auto;
+    width: 100%;
+}
+
+.itemReviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2vw;
+    height: 12.3vw;
+    width: 96%;
+    background-color: var(--itemGrayColor);
+    font-size: 2vw;
+    box-shadow: 0vw 0vw 1.388vw 0vw var(--ShadowColor);
+    transition: transform 0.3s ease-in-out;
+}
+.itemReviews:hover{
+    transform: scale(1.03);
+}
+
+.itemHeadreviews{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 0.7%;
+    font-size: 1.2vw;
+}
+
+.DateBuying{
+    min-width: 40%;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+}
+.PriceBuying{
+    min-width: 60%;
+    max-width: 100%;
+    margin-left: auto;
+}
+.buyer{
+    width: 95%;
+    font-size: 1vw;
+}
+
+.descriptionReviews{
+    display: -webkit-box;
+    min-height: 40%;
+    max-height: 40%;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    width: 95%;
+    margin-top: 1%;
+    font-size: 1.4vw;
+}
+.itemReviwesMore{
+    display: none;
+    font-size: 1.5vw;
+    margin-top: 0.8%;
+    margin-right: 85.2%;
+    transform-origin: 0% 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.itemReviwesMore:hover{
+    transform: scale(1.08);
+}
+
+.itemFooterReviews{
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: auto;
+    margin-bottom: 0.7%;
+    width: 95%;
+    font-size: 1.2vw;
+}
+
+.reviewsTextmore{
+    margin-right: 84%;
+    font-size: 1.5vw; 
+    color: var(--TextOfferColor);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 0% 100%;
+}
+.reviewsTextmore:hover{
+    transform: scale(1.05);
+}
+
+.similarProducts{
+    margin-top: 3%;
+    border-radius: 2vw;
+    height: auto;
+    width: 100%;
+    background-color: var(--BGColor);
+    box-shadow: 0.694vw 0.694vw 1.388vw 0vw var(--ShadowColor);
+    margin-bottom: 2%;
+}
+
+.items{
+    align-items: center;
+}
+.item:not(:first-child){
+    margin-top: 0.8vw;
+}
+.item{
+    width: 95%;
+    transform-origin: center;
+}
+.item:hover{
+    transform: scale(1.03) translateX(0%) translateY(0%);
+}
+
+.similarProductsText, .similarProductsTextmore{
+    color: var(--TextOfferColor);
+    margin-left: 5%;
+    
+}
+.similarProductsText{
+    margin-top: 1%;
+    padding-bottom: 1%;
+    width: max-content;
+}
+
+.similarProductsTextmore{
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 0% 100%;
+    padding-top: 1%;
+}
+.similarProductsTextmore:hover{
+    transform: scale(1.05);
+}
